@@ -1,0 +1,10 @@
+﻿@model List<CommunityWebSite.Models.Message>
+
+<h1>List of Messages</h1>
+@foreach (var m in Model) {
+    @:Subject: @m.Subject <br />
+    @:From: @m.Sender.LastName, @m.Sender.FirstName <br />
+        @:Date Sent: @m.Date.ToString("d") <br />
+        @:Body: @m.Body <br />
+        @:Topic: @m.Topic <br /> <br />
+}
