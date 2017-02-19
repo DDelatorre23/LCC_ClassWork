@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="761">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="1" y="254.5" width="80" height="80"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="43" eventType="touchUpInside"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                                <constraints>
+                                    <constraint id="584" firstItem="3" firstAttribute="height" constant="80"/>
+                                    <constraint id="585" firstItem="3" firstAttribute="width" constant="80"/>
+                                    <constraint id="675" firstItem="3" firstAttribute="height" constant="192"/>
+                                    <constraint id="676" firstItem="3" firstAttribute="width" constant="192"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="584"/>
+                                        <exclude reference="585"/>
+                                        <exclude reference="675"/>
+                                        <exclude reference="676"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <mask key="constraints">
+                                        <include reference="584"/>
+                                        <include reference="585"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="675"/>
+                                        <include reference="676"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="1" y="333.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="48" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="1" y="413.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="49" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="161" y="254.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="45" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="81" y="254.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="44" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="10" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="81" y="333.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="346" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="11" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="161" y="333.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="46" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="81" y="413.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="50" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="22" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="161" y="413.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="51" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="1" y="493.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30" weight="heavy"/>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Clear_TouchUpInside:" destination="BYZ-38-t0r" id="368" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="81" y="493.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Numeral_TouchUpInside:" destination="BYZ-38-t0r" id="52" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="28" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="161" y="493.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.50196078431372548" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Equals_TouchUpInside:" destination="BYZ-38-t0r" id="342" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="29" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="241" y="493.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Operation_TouchUpInside:" destination="BYZ-38-t0r" id="56" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="556" firstItem="29" firstAttribute="height" constant="80"/>
+                                    <constraint id="557" firstItem="29" firstAttribute="width" constant="80"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="556"/>
+                                        <exclude reference="557"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="556"/>
+                                        <include reference="557"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="241" y="413.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Operation_TouchUpInside:" destination="BYZ-38-t0r" id="55" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="31" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="241" y="333.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="x">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Operation_TouchUpInside:" destination="BYZ-38-t0r" id="54" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="32" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="241" y="254.5" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Operation_TouchUpInside:" destination="BYZ-38-t0r" id="53" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="42" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="113.5" width="320" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1"/>
+                                <constraints>
+                                    <constraint id="413" firstItem="42" firstAttribute="height" constant="140"/>
+                                    <constraint id="414" firstItem="42" firstAttribute="width" constant="320"/>
+                                    <constraint id="642" firstItem="42" firstAttribute="height" constant="319"/>
+                                    <constraint id="643" firstItem="42" firstAttribute="width" constant="160"/>
+                                    <constraint id="711" firstItem="42" firstAttribute="height" constant="319">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="257"/>
+                                    </constraint>
+                                    <constraint id="712" firstItem="42" firstAttribute="width" constant="769"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="413"/>
+                                        <exclude reference="414"/>
+                                        <exclude reference="642"/>
+                                        <exclude reference="643"/>
+                                        <exclude reference="711"/>
+                                        <exclude reference="712"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="413"/>
+                                        <include reference="414"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <mask key="constraints">
+                                        <include reference="642"/>
+                                        <include reference="643"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="711"/>
+                                        <include reference="712"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="349" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="14" y="173.5" width="42" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="560" firstItem="349" firstAttribute="height" constant="20"/>
+                                    <constraint id="561" firstItem="349" firstAttribute="width" constant="42"/>
+                                    <constraint id="666" firstItem="349" firstAttribute="height" constant="20"/>
+                                    <constraint id="667" firstItem="349" firstAttribute="width" constant="42"/>
+                                    <constraint id="668" firstItem="349" firstAttribute="height" constant="20"/>
+                                    <constraint id="669" firstItem="349" firstAttribute="width" constant="42"/>
+                                    <constraint id="713" firstItem="349" firstAttribute="height" constant="55"/>
+                                    <constraint id="714" firstItem="349" firstAttribute="width" constant="101"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="560"/>
+                                        <exclude reference="561"/>
+                                        <exclude reference="666"/>
+                                        <exclude reference="668"/>
+                                        <exclude reference="669"/>
+                                        <exclude reference="713"/>
+                                        <exclude reference="714"/>
+                                        <exclude reference="667"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="560"/>
+                                        <include reference="561"/>
+                                        <include reference="666"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <mask key="constraints">
+                                        <include reference="668"/>
+                                        <include reference="669"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="713"/>
+                                        <include reference="714"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="792" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="1" y="114" width="29" height="30"/>
+                                <state key="normal" image="AboutIcon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="859"/>
+                                        <include reference="860"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="859" firstItem="792" firstAttribute="width" constant="29"/>
+                                    <constraint id="860" firstItem="792" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="859"/>
+                                        <exclude reference="860"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="412" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="42" secondAttribute="centerY" constant="150"/>
+                            <constraint id="487" firstItem="22" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="488" firstItem="28" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="489" firstItem="30" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="490" firstItem="10" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="491" firstItem="11" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="492" firstItem="21" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="493" firstItem="26" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="494" firstItem="31" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="495" firstItem="4" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="496" firstItem="6" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="497" firstItem="23" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="498" firstItem="3" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="499" firstItem="7" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="500" firstItem="8" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="501" firstItem="32" firstAttribute="width" secondItem="29" secondAttribute="width"/>
+                            <constraint id="502" firstItem="22" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="503" firstItem="28" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="504" firstItem="30" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="505" firstItem="10" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="506" firstItem="11" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="507" firstItem="21" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="508" firstItem="26" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="509" firstItem="31" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="510" firstItem="4" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="511" firstItem="6" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="512" firstItem="23" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="513" firstItem="3" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="514" firstItem="7" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="515" firstItem="8" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="516" firstItem="32" firstAttribute="height" secondItem="29" secondAttribute="height"/>
+                            <constraint id="518" firstItem="3" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="29">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint id="522" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint id="525" firstItem="8" firstAttribute="top" secondItem="3" secondAttribute="top"/>
+                            <constraint id="527" firstItem="7" firstAttribute="top" secondItem="3" secondAttribute="top"/>
+                            <constraint id="528" firstItem="32" firstAttribute="top" secondItem="3" secondAttribute="top"/>
+                            <constraint id="529" firstItem="8" firstAttribute="leading" secondItem="3" secondAttribute="trailing"/>
+                            <constraint id="530" firstItem="7" firstAttribute="leading" secondItem="8" secondAttribute="trailing"/>
+                            <constraint id="531" firstItem="32" firstAttribute="leading" secondItem="7" secondAttribute="trailing"/>
+                            <constraint id="532" firstItem="3" firstAttribute="bottom" secondItem="4" secondAttribute="top" constant="1"/>
+                            <constraint id="533" firstItem="4" firstAttribute="leading" secondItem="3" secondAttribute="leading"/>
+                            <constraint id="534" firstItem="10" firstAttribute="leading" secondItem="4" secondAttribute="trailing"/>
+                            <constraint id="535" firstItem="8" firstAttribute="bottom" secondItem="10" secondAttribute="top" constant="1"/>
+                            <constraint id="536" firstItem="11" firstAttribute="leading" secondItem="10" secondAttribute="trailing"/>
+                            <constraint id="537" firstItem="7" firstAttribute="bottom" secondItem="11" secondAttribute="top" constant="1"/>
+                            <constraint id="538" firstItem="31" firstAttribute="leading" secondItem="11" secondAttribute="trailing"/>
+                            <constraint id="539" firstItem="32" firstAttribute="bottom" secondItem="31" secondAttribute="top" constant="1"/>
+                            <constraint id="540" firstItem="30" firstAttribute="leading" secondItem="22" secondAttribute="trailing"/>
+                            <constraint id="541" firstItem="30" firstAttribute="top" secondItem="31" secondAttribute="bottom"/>
+                            <constraint id="542" firstItem="22" firstAttribute="leading" secondItem="21" secondAttribute="trailing"/>
+                            <constraint id="543" firstItem="22" firstAttribute="top" secondItem="11" secondAttribute="bottom"/>
+                            <constraint id="544" firstItem="21" firstAttribute="leading" secondItem="6" secondAttribute="trailing"/>
+                            <constraint id="545" firstItem="21" firstAttribute="top" secondItem="10" secondAttribute="bottom"/>
+                            <constraint id="546" firstItem="6" firstAttribute="leading" secondItem="4" secondAttribute="leading"/>
+                            <constraint id="547" firstItem="6" firstAttribute="top" secondItem="4" secondAttribute="bottom"/>
+                            <constraint id="548" firstItem="23" firstAttribute="top" secondItem="6" secondAttribute="bottom"/>
+                            <constraint id="549" firstItem="23" firstAttribute="leading" secondItem="6" secondAttribute="leading"/>
+                            <constraint id="550" firstItem="26" firstAttribute="leading" secondItem="23" secondAttribute="trailing"/>
+                            <constraint id="551" firstItem="26" firstAttribute="top" secondItem="21" secondAttribute="bottom"/>
+                            <constraint id="552" firstItem="28" firstAttribute="leading" secondItem="26" secondAttribute="trailing"/>
+                            <constraint id="553" firstItem="28" firstAttribute="top" secondItem="22" secondAttribute="bottom"/>
+                            <constraint id="554" firstItem="29" firstAttribute="leading" secondItem="28" secondAttribute="trailing"/>
+                            <constraint id="555" firstItem="29" firstAttribute="top" secondItem="30" secondAttribute="bottom"/>
+                            <constraint id="558" firstItem="349" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="14"/>
+                            <constraint id="559" firstItem="349" firstAttribute="top" secondItem="42" secondAttribute="top" constant="60"/>
+                            <constraint id="582" firstItem="42" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="583" firstItem="42" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="586" firstItem="4" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="587" firstItem="7" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="588" firstItem="8" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="589" firstItem="10" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="590" firstItem="11" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="591" firstItem="31" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="592" firstItem="32" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="593" firstItem="6" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="594" firstItem="21" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="595" firstItem="22" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="596" firstItem="30" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="597" firstItem="23" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="598" firstItem="26" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="599" firstItem="28" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="600" firstItem="29" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="601" firstItem="4" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="602" firstItem="7" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="603" firstItem="8" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="604" firstItem="10" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="605" firstItem="11" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="606" firstItem="31" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="607" firstItem="32" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="608" firstItem="6" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="609" firstItem="21" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="610" firstItem="22" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="611" firstItem="30" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="612" firstItem="23" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="613" firstItem="26" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="614" firstItem="28" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="615" firstItem="29" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="616" firstItem="4" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="617" firstItem="6" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="618" firstItem="7" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="619" firstItem="8" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="620" firstItem="10" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="621" firstItem="11" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="622" firstItem="21" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="623" firstItem="22" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="624" firstItem="23" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="625" firstItem="26" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="626" firstItem="28" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="627" firstItem="29" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="628" firstItem="30" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="629" firstItem="31" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="630" firstItem="32" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="631" firstItem="349" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="10"/>
+                            <constraint id="632" firstItem="349" firstAttribute="top" secondItem="42" secondAttribute="top" constant="150"/>
+                            <constraint id="638" firstItem="3" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="160"/>
+                            <constraint id="639" firstItem="3" firstAttribute="top" secondItem="42" secondAttribute="top"/>
+                            <constraint id="677" firstItem="8" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="678" firstItem="4" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="679" firstItem="6" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="680" firstItem="7" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="681" firstItem="10" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="682" firstItem="11" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="683" firstItem="21" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="684" firstItem="22" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="685" firstItem="30" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="686" firstItem="31" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="687" firstItem="32" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="688" firstItem="23" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="689" firstItem="26" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="690" firstItem="28" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="691" firstItem="29" firstAttribute="width" secondItem="3" secondAttribute="width"/>
+                            <constraint id="692" firstItem="8" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="693" firstItem="4" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="694" firstItem="6" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="695" firstItem="7" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="696" firstItem="10" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="697" firstItem="11" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="698" firstItem="21" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="699" firstItem="22" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="700" firstItem="30" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="701" firstItem="31" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="702" firstItem="32" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="703" firstItem="23" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="704" firstItem="26" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="705" firstItem="28" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="706" firstItem="29" firstAttribute="height" secondItem="3" secondAttribute="height"/>
+                            <constraint id="707" firstItem="3" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="1"/>
+                            <constraint id="708" firstItem="3" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="196">
+                                <variation key="heightClass=regular-widthClass=regular" constant="1"/>
+                            </constraint>
+                            <constraint id="709" firstItem="8bC-Xf-vdC" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="1"/>
+                            <constraint id="710" firstItem="42" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="715" firstItem="349" firstAttribute="top" secondItem="42" secondAttribute="top" constant="115"/>
+                            <constraint id="716" firstItem="349" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="10"/>
+                            <constraint id="745" firstItem="42" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="861" firstItem="792" firstAttribute="leading" secondItem="42" secondAttribute="leading" constant="1"/>
+                            <constraint id="862" firstItem="792" firstAttribute="top" secondItem="42" secondAttribute="top"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="412"/>
+                                <exclude reference="487"/>
+                                <exclude reference="488"/>
+                                <exclude reference="489"/>
+                                <exclude reference="490"/>
+                                <exclude reference="491"/>
+                                <exclude reference="492"/>
+                                <exclude reference="493"/>
+                                <exclude reference="494"/>
+                                <exclude reference="495"/>
+                                <exclude reference="496"/>
+                                <exclude reference="497"/>
+                                <exclude reference="498"/>
+                                <exclude reference="499"/>
+                                <exclude reference="500"/>
+                                <exclude reference="501"/>
+                                <exclude reference="502"/>
+                                <exclude reference="503"/>
+                                <exclude reference="504"/>
+                                <exclude reference="505"/>
+                                <exclude reference="506"/>
+                                <exclude reference="507"/>
+                                <exclude reference="508"/>
+                                <exclude reference="509"/>
+                                <exclude reference="510"/>
+                                <exclude reference="511"/>
+                                <exclude reference="512"/>
+                                <exclude reference="513"/>
+                                <exclude reference="514"/>
+                                <exclude reference="515"/>
+                                <exclude reference="516"/>
+                                <exclude reference="522"/>
+                                <exclude reference="558"/>
+                                <exclude reference="559"/>
+                                <exclude reference="518"/>
+                                <exclude reference="582"/>
+                                <exclude reference="583"/>
+                                <exclude reference="586"/>
+                                <exclude reference="587"/>
+                                <exclude reference="588"/>
+                                <exclude reference="589"/>
+                                <exclude reference="590"/>
+                                <exclude reference="591"/>
+                                <exclude reference="592"/>
+                                <exclude reference="593"/>
+                                <exclude reference="594"/>
+                                <exclude reference="595"/>
+                                <exclude reference="596"/>
+                                <exclude reference="597"/>
+                                <exclude reference="598"/>
+                                <exclude reference="599"/>
+                                <exclude reference="600"/>
+                                <exclude reference="601"/>
+                                <exclude reference="602"/>
+                                <exclude reference="603"/>
+                                <exclude reference="604"/>
+                                <exclude reference="605"/>
+                                <exclude reference="606"/>
+                                <exclude reference="607"/>
+                                <exclude reference="608"/>
+                                <exclude reference="609"/>
+                                <exclude reference="610"/>
+                                <exclude reference="611"/>
+                                <exclude reference="612"/>
+                                <exclude reference="613"/>
+                                <exclude reference="614"/>
+                                <exclude reference="615"/>
+                                <exclude reference="616"/>
+                                <exclude reference="617"/>
+                                <exclude reference="618"/>
+                                <exclude reference="619"/>
+                                <exclude reference="620"/>
+                                <exclude reference="621"/>
+                                <exclude reference="622"/>
+                                <exclude reference="623"/>
+                                <exclude reference="624"/>
+                                <exclude reference="625"/>
+                                <exclude reference="626"/>
+                                <exclude reference="627"/>
+                                <exclude reference="628"/>
+                                <exclude reference="629"/>
+                                <exclude reference="630"/>
+                                <exclude reference="631"/>
+                                <exclude reference="632"/>
+                                <exclude reference="638"/>
+                                <exclude reference="639"/>
+                                <exclude reference="677"/>
+                                <exclude reference="678"/>
+                                <exclude reference="679"/>
+                                <exclude reference="680"/>
+                                <exclude reference="681"/>
+                                <exclude reference="682"/>
+                                <exclude reference="683"/>
+                                <exclude reference="684"/>
+                                <exclude reference="685"/>
+                                <exclude reference="686"/>
+                                <exclude reference="687"/>
+                                <exclude reference="688"/>
+                                <exclude reference="689"/>
+                                <exclude reference="690"/>
+                                <exclude reference="691"/>
+                                <exclude reference="692"/>
+                                <exclude reference="693"/>
+                                <exclude reference="694"/>
+                                <exclude reference="695"/>
+                                <exclude reference="696"/>
+                                <exclude reference="697"/>
+                                <exclude reference="698"/>
+                                <exclude reference="699"/>
+                                <exclude reference="700"/>
+                                <exclude reference="701"/>
+                                <exclude reference="702"/>
+                                <exclude reference="703"/>
+                                <exclude reference="704"/>
+                                <exclude reference="705"/>
+                                <exclude reference="706"/>
+                                <exclude reference="707"/>
+                                <exclude reference="708"/>
+                                <exclude reference="709"/>
+                                <exclude reference="710"/>
+                                <exclude reference="715"/>
+                                <exclude reference="716"/>
+                                <exclude reference="745"/>
+                                <exclude reference="861"/>
+                                <exclude reference="862"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="412"/>
+                                <include reference="487"/>
+                                <include reference="488"/>
+                                <include reference="489"/>
+                                <include reference="490"/>
+                                <include reference="491"/>
+                                <include reference="492"/>
+                                <include reference="493"/>
+                                <include reference="494"/>
+                                <include reference="495"/>
+                                <include reference="496"/>
+                                <include reference="497"/>
+                                <include reference="498"/>
+                                <include reference="499"/>
+                                <include reference="500"/>
+                                <include reference="501"/>
+                                <include reference="502"/>
+                                <include reference="503"/>
+                                <include reference="504"/>
+                                <include reference="505"/>
+                                <include reference="506"/>
+                                <include reference="507"/>
+                                <include reference="508"/>
+                                <include reference="509"/>
+                                <include reference="510"/>
+                                <include reference="511"/>
+                                <include reference="512"/>
+                                <include reference="513"/>
+                                <include reference="514"/>
+                                <include reference="515"/>
+                                <include reference="516"/>
+                                <include reference="518"/>
+                                <include reference="522"/>
+                                <include reference="525"/>
+                                <include reference="527"/>
+                                <include reference="528"/>
+                                <include reference="529"/>
+                                <include reference="530"/>
+                                <include reference="531"/>
+                                <include reference="532"/>
+                                <include reference="533"/>
+                                <include reference="534"/>
+                                <include reference="535"/>
+                                <include reference="536"/>
+                                <include reference="537"/>
+                                <include reference="538"/>
+                                <include reference="539"/>
+                                <include reference="540"/>
+                                <include reference="541"/>
+                                <include reference="542"/>
+                                <include reference="543"/>
+                                <include reference="544"/>
+                                <include reference="545"/>
+                                <include reference="546"/>
+                                <include reference="547"/>
+                                <include reference="548"/>
+                                <include reference="549"/>
+                                <include reference="550"/>
+                                <include reference="551"/>
+                                <include reference="552"/>
+                                <include reference="553"/>
+                                <include reference="554"/>
+                                <include reference="555"/>
+                                <include reference="558"/>
+                                <include reference="559"/>
+                                <include reference="745"/>
+                                <include reference="861"/>
+                                <include reference="862"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="582"/>
+                                <include reference="583"/>
+                                <include reference="586"/>
+                                <include reference="587"/>
+                                <include reference="588"/>
+                                <include reference="589"/>
+                                <include reference="590"/>
+                                <include reference="591"/>
+                                <include reference="592"/>
+                                <include reference="593"/>
+                                <include reference="594"/>
+                                <include reference="595"/>
+                                <include reference="596"/>
+                                <include reference="597"/>
+                                <include reference="598"/>
+                                <include reference="599"/>
+                                <include reference="600"/>
+                                <include reference="601"/>
+                                <include reference="602"/>
+                                <include reference="603"/>
+                                <include reference="604"/>
+                                <include reference="605"/>
+                                <include reference="606"/>
+                                <include reference="607"/>
+                                <include reference="608"/>
+                                <include reference="609"/>
+                                <include reference="610"/>
+                                <include reference="611"/>
+                                <include reference="612"/>
+                                <include reference="613"/>
+                                <include reference="614"/>
+                                <include reference="615"/>
+                                <include reference="616"/>
+                                <include reference="617"/>
+                                <include reference="618"/>
+                                <include reference="619"/>
+                                <include reference="620"/>
+                                <include reference="621"/>
+                                <include reference="622"/>
+                                <include reference="623"/>
+                                <include reference="624"/>
+                                <include reference="625"/>
+                                <include reference="626"/>
+                                <include reference="627"/>
+                                <include reference="628"/>
+                                <include reference="629"/>
+                                <include reference="630"/>
+                                <include reference="631"/>
+                                <include reference="632"/>
+                                <include reference="638"/>
+                                <include reference="639"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="677"/>
+                                <include reference="678"/>
+                                <include reference="679"/>
+                                <include reference="680"/>
+                                <include reference="681"/>
+                                <include reference="682"/>
+                                <include reference="683"/>
+                                <include reference="684"/>
+                                <include reference="685"/>
+                                <include reference="686"/>
+                                <include reference="687"/>
+                                <include reference="688"/>
+                                <include reference="689"/>
+                                <include reference="690"/>
+                                <include reference="691"/>
+                                <include reference="692"/>
+                                <include reference="693"/>
+                                <include reference="694"/>
+                                <include reference="695"/>
+                                <include reference="696"/>
+                                <include reference="697"/>
+                                <include reference="698"/>
+                                <include reference="699"/>
+                                <include reference="700"/>
+                                <include reference="701"/>
+                                <include reference="702"/>
+                                <include reference="703"/>
+                                <include reference="704"/>
+                                <include reference="705"/>
+                                <include reference="706"/>
+                                <include reference="707"/>
+                                <include reference="708"/>
+                                <include reference="709"/>
+                                <include reference="710"/>
+                                <include reference="715"/>
+                                <include reference="716"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="42"/>
+                                <include reference="349"/>
+                                <include reference="3"/>
+                                <include reference="8"/>
+                                <include reference="7"/>
+                                <include reference="32"/>
+                                <include reference="31"/>
+                                <include reference="11"/>
+                                <include reference="10"/>
+                                <include reference="4"/>
+                                <include reference="6"/>
+                                <include reference="21"/>
+                                <include reference="22"/>
+                                <include reference="30"/>
+                                <include reference="29"/>
+                                <include reference="28"/>
+                                <include reference="26"/>
+                                <include reference="23"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection id="893" property="gestureRecognizers" destination="892"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="SevenButton" destination="3" id="name-outlet-3"/>
+                        <outlet property="EightButton" destination="8" id="name-outlet-8"/>
+                        <outlet property="NineButton" destination="7" id="name-outlet-7"/>
+                        <outlet property="DivisionButton" destination="32" id="name-outlet-32"/>
+                        <outlet property="MultiplyButton" destination="31" id="name-outlet-31"/>
+                        <outlet property="SixButton" destination="11" id="name-outlet-11"/>
+                        <outlet property="FiveButton" destination="10" id="name-outlet-10"/>
+                        <outlet property="FourButton" destination="4" id="name-outlet-4"/>
+                        <outlet property="OneButton" destination="6" id="name-outlet-6"/>
+                        <outlet property="TwoButton" destination="21" id="name-outlet-21"/>
+                        <outlet property="ThreeButton" destination="22" id="name-outlet-22"/>
+                        <outlet property="SubtractButton" destination="30" id="name-outlet-30"/>
+                        <outlet property="ClearButton" destination="23" id="name-outlet-23"/>
+                        <outlet property="ZeroButton" destination="26" id="name-outlet-26"/>
+                        <outlet property="EqualsButton" destination="28" id="name-outlet-28"/>
+                        <outlet property="AdditionButton" destination="29" id="name-outlet-29"/>
+                        <outlet property="DisplayLabel" destination="42" id="name-outlet-42"/>
+                        <outlet property="SymbolLabel" destination="349" id="name-outlet-349"/>
+                        <outlet property="AboutButton" destination="792" id="name-outlet-792"/>
+                        <outlet property="historyCalcSwipeGesture" destination="892" id="name-outlet-892"/>
+                    </connections>
+                    <navigationItem title="Calculator" id="782" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="892">
+                    <connections>
+                        <action selector="View_SwipeRecognized:" destination="BYZ-38-t0r" id="894"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1254" y="-593"/>
+        </scene>
+        <scene sceneID="760">
+            <objects>
+                <navigationController id="761" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="763">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="783" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="764" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1690" y="-594"/>
+        </scene>
+        <scene sceneID="787">
+            <objects>
+                <viewController id="788" sceneMemberID="viewController" title="About" storyboardIdentifier="AboutController" customClass="AboutController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="785"/>
+                        <viewControllerLayoutGuide type="bottom" id="786"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="789">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="835" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="122" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="836" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="194" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel Dela Torre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="838" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="104" y="122" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feb. 18, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="839" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="150" y="194" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="841" translatesAutoresizingMaskIntoConstraints="NO" text="This app was created using C# with Xamarin studio for Mac for my iOS app dev class." editable="NO" selectable="NO">
+                                <rect key="frame" x="20" y="223" width="240" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="835"/>
+                                <exclude reference="836"/>
+                                <exclude reference="838"/>
+                                <exclude reference="839"/>
+                                <exclude reference="841"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="835"/>
+                                <include reference="836"/>
+                                <include reference="838"/>
+                                <include reference="839"/>
+                                <include reference="841"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="790" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="-602"/>
+        </scene>
+        <scene sceneID="901">
+            <objects>
+                <tableViewController id="902" sceneMemberID="viewController" storyboardIdentifier="CalculationsHistoryController" customClass="CalculationsHistoryController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="903" customClass="CalculationsHistoryController">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="906">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="906" id="907">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="902" id="904"/>
+                            <outlet property="delegate" destination="902" id="905"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="908" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440" y="-612"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="AboutIcon.png" width="360" height="360"/>
+    </resources>
+</document>
