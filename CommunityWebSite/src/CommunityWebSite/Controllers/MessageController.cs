@@ -29,7 +29,7 @@ namespace CommunityWebSite.Controllers {
         }
 
         public ViewResult GetMessagesByTopic (string topic) {
-            return View(messageRepository.GetMessagesByTopic(topic));
+            return View(messageRepository.GetMessagesByTopic(topic).ToList());
         }
 
     }

@@ -19,18 +19,21 @@ namespace CommunityWebSite.Repository {
         }
 
         public List<Message> GetMessagesByDateRange(DateTime start, DateTime end) {
-            var list = context.Messages.Where(d => d.Date >= start && d.Date <= end).ToList();
+            var list = context.Messages.Include(m => m.Sender)
+                .Where(d => d.Date >= start && d.Date <= end).ToList();
             return list;
         }
 
         public List<Message> GetMessagesByMember(int memberID) {
-            var list = context.Messages.Where(m => m.Sender.MemberID == memberID).Include(m => m.Sender).ToList();
+            var list = context.Messages.Include(m => m.Sender)
+                .Where(m => m.Sender.MemberID == memberID).Include(m => m.Sender).ToList();
 
             return list;
         }
 
         public List<Message> GetMessagesByTopic(string topic) {
-            var list = context.Messages.Where(m => m.Topic == topic).ToList();
+            var list = context.Messages.Include(m => m.Sender)
+                .Where(m => m.Topic == topic).ToList();
 
             return list;
         }

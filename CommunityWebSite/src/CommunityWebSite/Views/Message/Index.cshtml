@@ -8,3 +8,7 @@
         @:Body: @m.Body <br />
         @:Topic: @m.Topic <br /> <br />
 }
+
+@Html.ActionLink("Sort by Topic A", "GetMessagesByTopic", "Message", new { topic = "Topic A"}, null) <br />
+@Html.ActionLink("Sort by Topic B", "GetMessagesByTopic", "Message", new { topic = "Topic B" }, null) <br />
+@Html.ActionLink("Sort by Topic C", "GetMessagesByTopic", "Message", new { topic = "Topic C" }, null) <br />
