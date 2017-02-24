@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "testRunner": "xunit",
   "dependencies": {
@@ -8,7 +8,8 @@
     },
     "xunit": "2.1.0",
     "dotnet-test-xunit": "2.2.0-preview2-build1029",
-    "CommunityWebSite": "1.0.0"
+    "CommunityWebSite": "1.0.0",
+    "Microsoft.EntityFrameworkCore": "1.0.1"
   },
   "frameworks": {
     "netcoreapp1.0": {

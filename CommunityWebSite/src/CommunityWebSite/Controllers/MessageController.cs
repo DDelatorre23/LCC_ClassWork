@@ -21,7 +21,7 @@ namespace CommunityWebSite.Controllers {
         }
 
         public ViewResult GetMessageByDateRange(DateTime start, DateTime end) {
-            return View(messageRepository.GetMessagesByDateRange(start, end));
+            return View("Index", messageRepository.GetMessagesByDateRange(start, end));
         }
 
         public ViewResult GetMemberMessages(int memberID) {
@@ -29,7 +29,7 @@ namespace CommunityWebSite.Controllers {
         }
 
         public ViewResult GetMessagesByTopic (string topic) {
-            return View(messageRepository.GetMessagesByTopic(topic).ToList());
+            return View("Index", messageRepository.GetMessagesByTopic(topic).ToList());
         }
 
     }

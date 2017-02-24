@@ -64,7 +64,7 @@ namespace CommunityWebSite.Tests
         public void DoesGetMessagesByMember() {
             var testMember = membersFromRepo[0];
 
-            var messages = controller.GetMemberMessages(testMember).ViewData.Model as List<Message>;
+            var messages = controller.GetMemberMessages(testMember.MemberID).ViewData.Model as List<Message>;
 
             Assert.Equal(messages[0].Subject, "Test Subject omicron");
             Assert.Equal(messages[1].Subject, "Test Subject omega");
