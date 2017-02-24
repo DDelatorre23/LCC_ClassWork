@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutoLayoutDemo/AppDelegate.cs">
+    <Files>
+      <File FileName="AutoLayoutDemo/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="AutoLayoutDemo/ViewController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AutoLayoutDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2C685812-3B04-468A-A1D3-8ED3A82D8670" />
+</Properties>
