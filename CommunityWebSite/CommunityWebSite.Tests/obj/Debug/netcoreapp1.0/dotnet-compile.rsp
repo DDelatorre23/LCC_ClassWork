@@ -1,5 +1,5 @@
---temp-output:C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\obj\Debug\netcoreapp1.0\
---out:C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\bin\Debug\netcoreapp1.0\CommunityWebSite.Tests.dll
+--temp-output:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\obj\Debug\netcoreapp1.0\
+--out:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\bin\Debug\netcoreapp1.0\CommunityWebSite.Tests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -207,9 +207,9 @@
 --reference:C:\Users\Daniel\.nuget\packages\xunit.extensibility.execution\2.1.0\lib\dotnet\xunit.execution.dotnet.dll
 --reference:C:\Users\Daniel\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll
 --reference:C:\Users\Daniel\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
---reference:C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\src\CommunityWebSite\bin\Debug\netcoreapp1.0\CommunityWebSite.dll
-C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\FakeMemberRepository.cs
-C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\FakeMessageRepository.cs
-C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\MessageTests.cs
-C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\NewsArticleTests.cs
-C:\Users\Daniel\Documents\HIT Degree\Winter Term '17\CS 296N\Lab 6\CommunityWebSite\CommunityWebSite.Tests\Properties\AssemblyInfo.cs
+--reference:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\bin\Debug\netcoreapp1.0\CommunityWebSite.dll
+C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\FakeMemberRepository.cs
+C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\FakeMessageRepository.cs
+C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\MessageTests.cs
+C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\NewsArticleTests.cs
+C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\CommunityWebSite.Tests\Properties\AssemblyInfo.cs

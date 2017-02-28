@@ -13,7 +13,7 @@ namespace CommunityWebSite.Repository {
             context = ctx;
         }
 
-        public IEnumerable<Message> GetAllMessages() {
+        public IQueryable<Message> GetAllMessages() {
 
             return context.Messages.Include(m => m.Sender);
         }
@@ -36,6 +36,11 @@ namespace CommunityWebSite.Repository {
                 .Where(m => m.Topic == topic).ToList();
 
             return list;
+        }
+
+        public int Update(Message message) {
+            context.Messages.Update(message);
+            return context.SaveChanges();
         }
     }
 }

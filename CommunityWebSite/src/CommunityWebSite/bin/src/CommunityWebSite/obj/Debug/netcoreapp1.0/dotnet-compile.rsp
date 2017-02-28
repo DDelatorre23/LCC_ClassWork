@@ -1,5 +1,5 @@
---temp-output:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\obj\Debug\netcoreapp1.0\
---out:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\bin\Debug\netcoreapp1.0\CommunityWebSite.dll
+--temp-output:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\bin\src\CommunityWebSite\obj\Debug\netcoreapp1.0\
+--out:C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\bin\src\CommunityWebSite\bin\Debug\netcoreapp1.0\CommunityWebSite.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -201,7 +201,7 @@
 --reference:C:\Users\Daniel\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Daniel\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Daniel\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\obj\Debug\netcoreapp1.0\CommunityWebSitedotnet-compile.deps.json",CommunityWebSite.deps.json
+--resource:"C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\bin\src\CommunityWebSite\obj\Debug\netcoreapp1.0\CommunityWebSitedotnet-compile.deps.json",CommunityWebSite.deps.json
 C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\Program.cs
 C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\Startup.cs
 C:\GitRepo\LCC\LCC_ClassWork\CommunityWebSite\src\CommunityWebSite\Controllers\HomeController.cs

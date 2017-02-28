@@ -7,10 +7,10 @@ namespace CommunityWebSite.Repository
 {
     public interface IMessage
     {
-        IEnumerable<Message> GetAllMessages();
+        IQueryable<Message> GetAllMessages();
         List<Message> GetMessagesByMember(int memberID);
         List<Message> GetMessagesByDateRange(DateTime start, DateTime end);
         List<Message> GetMessagesByTopic(string topic);
-
+        int Update(Message message);
     }
 }
