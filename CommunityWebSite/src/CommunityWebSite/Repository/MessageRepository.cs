@@ -15,7 +15,7 @@ namespace CommunityWebSite.Repository {
 
         public IQueryable<Message> GetAllMessages() {
 
-            return context.Messages.Include(m => m.Sender);
+            return context.Messages.Include(m => m.Sender).Include(r => r.MessageReplies);
         }
 
         public List<Message> GetMessagesByDateRange(DateTime start, DateTime end) {

@@ -25,7 +25,7 @@ namespace CommunityWebSite.Controllers
             var replyVM = new ReplyViewModel();
             replyVM.MessageID = id;
             replyVM.Subject = subject;
-            replyVM.MessageReply = new Models.Reply();
+            replyVM.MessageReply = new Reply();
 
             return View(replyVM);
         }
@@ -36,7 +36,7 @@ namespace CommunityWebSite.Controllers
             Message message = repository.GetAllMessages().Where(m =>
             m.MessageID == id).FirstOrDefault();
 
-            message.MessageReplies.Add(new Reply { Body = body, DateCreated = DateTime.Today });
+            message.MessageReplies.Add(new Reply { Body = body, DateCreated = DateTime.Now });
 
             repository.Update(message);
 

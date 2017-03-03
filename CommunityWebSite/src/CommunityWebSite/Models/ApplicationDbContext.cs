@@ -9,5 +9,6 @@ namespace CommunityWebSite.Models
 
         public DbSet<Message> Messages { get; set; }
         public DbSet<Member> Members { get; set; }
+        
     }
 }

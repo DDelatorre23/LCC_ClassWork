@@ -1,5 +1,4 @@
 ﻿@model CommunityWebSite.Models.ViewModels.ReplyViewModel
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <h1>Reply to this Message</h1>
 Subject: @Model.Subject
@@ -9,9 +8,6 @@ Subject: @Model.Subject
 
     <label asp-for="MessageReply.Body"></label>
     <input asp-for="MessageReply.Body" />
-
-    @*<label asp-for="BookReview.Rating"></label>
-    <input asp-for="BookReview.Rating" />*@
 
     <button type="submit">Post</button>
 </form>
