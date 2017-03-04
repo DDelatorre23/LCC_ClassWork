@@ -7,7 +7,7 @@ namespace CommunityWebSite.Repository
 {
     public interface IMessage
     {
-        IQueryable<Message> GetAllMessages();
+        IEnumerable<Message> GetAllMessages();
         List<Message> GetMessagesByMember(int memberID);
         List<Message> GetMessagesByDateRange(DateTime start, DateTime end);
         List<Message> GetMessagesByTopic(string topic);

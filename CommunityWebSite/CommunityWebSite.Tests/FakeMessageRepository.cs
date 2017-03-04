@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace CommunityWebSite.Tests {
     public class FakeMessageRepository : IMessage {
 
+        IQueryable<Message> m;
         List<Message> messages;
         List<Member> members;
         public FakeMessageRepository() {
@@ -51,6 +52,7 @@ namespace CommunityWebSite.Tests {
             return messages;
         }
 
+
         public List<Message> GetMessagesByDateRange(DateTime start, DateTime end) {
             var list = messages.Where(d => d.Date >= start && d.Date <= end).ToList();
             return list;
@@ -67,6 +69,10 @@ namespace CommunityWebSite.Tests {
             var list = messages.Where(m => m.Topic == topic).ToList();
 
             return list;
+        }
+
+        public int Update(Message message) {
+            return 0;
         }
     }
 }

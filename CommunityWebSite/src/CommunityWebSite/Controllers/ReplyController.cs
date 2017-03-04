@@ -31,12 +31,12 @@ namespace CommunityWebSite.Controllers
         }
 
         [HttpPost]
-        public IActionResult ReplyForm(int id, string body) {
+        public IActionResult ReplyForm(ReplyViewModel vm) {
 
             Message message = repository.GetAllMessages().Where(m =>
-            m.MessageID == id).FirstOrDefault();
+            m.MessageID == vm.MessageID).FirstOrDefault();
 
-            message.MessageReplies.Add(new Reply { Body = body, DateCreated = DateTime.Now });
+            message.MessageReplies.Add(new Reply { Body = vm.MessageReply.Body, DateCreated = DateTime.Now });
 
             repository.Update(message);
 

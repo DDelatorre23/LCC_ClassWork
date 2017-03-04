@@ -13,7 +13,7 @@ namespace CommunityWebSite.Repository {
             context = ctx;
         }
 
-        public IQueryable<Message> GetAllMessages() {
+        public IEnumerable<Message> GetAllMessages() {
 
             return context.Messages.Include(m => m.Sender).Include(r => r.MessageReplies);
         }

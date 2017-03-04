@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "5d5a54588995d4e1fa96e3dc08d6609ba3edd5d7"
+    "signature": "1e053a079ee35adaec3ae0b09fd35b062a44d1a9"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,11 +10,22 @@
         "dependencies": {
           "xunit": "2.1.0",
           "dotnet-test-xunit": "2.2.0-preview2-build1029",
+          "moq.netcore": "4.4.0-beta8",
           "CommunityWebSite": "1.0.0",
           "Microsoft.EntityFrameworkCore": "1.0.1"
         },
         "runtime": {
           "CommunityWebSite.Tests.dll": {}
+        }
+      },
+      "castle.core.netcore/3.3.4-beta8": {
+        "dependencies": {
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Diagnostics.TraceSource": "4.0.0-beta-23409"
+        },
+        "runtime": {
+          "lib/dotnet/Castle.Core.dll": {}
         }
       },
       "dotnet-test-xunit/2.2.0-preview2-build1029": {
@@ -816,6 +827,14 @@
           "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.Loader.dll": {}
         }
       },
+      "moq.netcore/4.4.0-beta8": {
+        "dependencies": {
+          "castle.core.netcore": "3.3.4-beta8"
+        },
+        "runtime": {
+          "lib/dotnet/Moq.dll": {}
+        }
+      },
       "Newtonsoft.Json/9.0.1": {
         "dependencies": {
           "System.Runtime.Serialization.Primitives": "4.1.1"
@@ -1025,6 +1044,7 @@
           "lib/netstandard1.0/System.Diagnostics.Contracts.dll": {}
         }
       },
+      "System.Diagnostics.TraceSource/4.0.0-beta-23409": {},
       "System.Interactive.Async/3.0.0": {
         "runtime": {
           "lib/netstandard1.0/System.Interactive.Async.dll": {}
@@ -1145,6 +1165,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "castle.core.netcore/3.3.4-beta8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FyriJO1Ccj5RsqjUbHG7lJsqRT7IG6u6JgDNI4GHJQsGeGpT+1RSNvO3lzre3vZXZpbeL8iB7CO6D2t1J6RWEA=="
     },
     "dotnet-test-xunit/2.2.0-preview2-build1029": {
       "type": "package",
@@ -1566,6 +1591,11 @@
       "serviceable": true,
       "sha512": "sha512-f01OAOfsctcN7gSa05qYK8AgU1E/BFeZizvszNJMXY3BMJbYSj+3+YqyLunkMSf7LN92kcl7gQsAY9FayEH3ag=="
     },
+    "moq.netcore/4.4.0-beta8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XbvVw6iySEodAQ1wwBitOMN7stFUYu+tpCluZKM6R9hR4YvS93qo8WXBC91cNwZr+ONDgdtxw6YG+OKOwwIThQ=="
+    },
     "Newtonsoft.Json/9.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1695,6 +1725,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-HvQQjy712vnlpPxaloZYkuE78Gn353L0SJLJVeLcNASeg9c4qla2a1Xq8I7B3jZoDzKPtHTkyVO7AZ5tpeQGuA=="
+    },
+    "System.Diagnostics.TraceSource/4.0.0-beta-23409": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-43qywT02IIcP3uRoIYndSa6tTalx2VIVulk7lTN++hFCpHvne8zrD7HNuBn8AnfgDWohEkO4kFbvCpiwbOSGhg=="
     },
     "System.Interactive.Async/3.0.0": {
       "type": "package",

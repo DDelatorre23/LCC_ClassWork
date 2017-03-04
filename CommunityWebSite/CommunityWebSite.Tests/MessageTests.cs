@@ -8,7 +8,6 @@ using CommunityWebSite.Models;
 using CommunityWebSite.Repository;
 
 
-
 namespace CommunityWebSite.Tests
 {
     public class MessageTests {
@@ -29,7 +28,7 @@ namespace CommunityWebSite.Tests
         [Fact]
         public void DoesGetMessages() {
             var message = controller.Index().ViewData.Model as List<Message>;
-
+           
             for (int i = 0; i < message.Count; i++) {
                 Assert.Equal(messagesFromRepo[i].Subject,
                     message[i].Subject);
