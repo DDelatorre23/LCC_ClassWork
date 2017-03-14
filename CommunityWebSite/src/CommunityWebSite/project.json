@@ -62,13 +62,12 @@
     "include": [
       "wwwroot",
       "**/*.cshtml",
-      "appsettings.json",
+      "appsettings.Production.json",
       "web.config"
     ]
   },
 
   "scripts": {
-    "prepublish": [ "dotnet bundle" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   }
 }

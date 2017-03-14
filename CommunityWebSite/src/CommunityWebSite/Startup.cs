@@ -14,12 +14,13 @@ namespace CommunityWebSite {
         public Startup(IHostingEnvironment env) {
             Configuration = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json").Build();
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
+                .Build();
         }
         public void ConfigureServices(IServiceCollection services) {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
-                Configuration["Data:CommunityMessages:ConnectionString"]));
+                Configuration["Data:CommunityMessages:DefaultConnection"]));
             services.AddMvc();
             services.AddTransient<IMessage, MessageRepository>();
             services.AddTransient<IMember, MemberRepository>();
@@ -29,11 +30,13 @@ namespace CommunityWebSite {
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app) {
             app.UseStaticFiles();
-            app.UseMvc(routes => {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseStatusCodePages();
+            app.UseMvcWithDefaultRoute();
+            //app.UseMvc(routes => {
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
 
             SeedData.EnsurePopulated(app);
         }

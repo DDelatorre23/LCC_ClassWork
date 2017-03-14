@@ -6,6 +6,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQRUGqVEYU0Gwo41CE8VGXAAAAAACAAAAAAAQZgAAAAEAACAAAAAlxM1zpz8rN5aYAEx0amoXJypYL9lbdrx+709QjydtEwAAAAAOgAAAAAIAACAAAACw+xowbeD9FBGZrK/1KfA6WkPHaNqLIHAiCoQDJULLUIAAAABAPRrtrdt24P6aZSnU1VmjVPbDf18f07G3ixI4Q+1cpPjGPfmTIBpmrsUXfApDknEFW6ql0oMcJZY1Bl6faX9vA9opF8esHOro9jvsIWbyPlhfdJ+1/F2iFFB8tjo4PTjwuaB1nb4MnLwMS7GUxHj2jDP5Tb5Sf+mV6vdhxRdTZkAAAAAi0eF5wIASn+z136USFEeIR21jd+TOcyWOsRLyOjeCKwyaorZFpqhIFLIFoWfOkWOhODriX5AJs0FXApxtXq96</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQRUGqVEYU0Gwo41CE8VGXAAAAAACAAAAAAAQZgAAAAEAACAAAABfGrmNwo2ff3gIrcNKSyxuxv/F0T8wSqI3GO1I0g9tmQAAAAAOgAAAAAIAACAAAAC99UY8s5qcG636DpTgJD2vc3Cw59MDMAKeTgILnIhkAoAAAAADDnTxajHfmxz48qgVNGrxuFZ8qO9KhZG+eEDIJQBQypYNGFybRE/ud40m+fgbsVqBiyQjxIj9f8LTCaK0kxvD0/3T1Tirv+yyP5M7pjJ5QG752LDPZpVfErWvS/ObZ+IFbh4L5fl0i5E20RiNh4WuzxPXYAuvF1pM2+YNNQJ2U0AAAADZcSwrdXOmErELIUEt99yMqrHRoN9Z/TlXXjZhjuI46Kb55WJ60hA/LIDqTw4Zu9dN+IFRwMt9s+xan15Fo9iC</EncryptedPassword>
   </PropertyGroup>
+  <ItemGroup>
+    <EfMigrations Include="CommunityWebSite.Models.ApplicationDbContext">
+      <Value>Server=tcp:harrisburgcommdbserver.database.windows.net,1433;Initial Catalog=HarrisburgCommDB;Persist Security Info=False;User ID=AdminUser123@harrisburgcommdbserver;Password=Passw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EfMigrations>
+  </ItemGroup>
 </Project>

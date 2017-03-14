@@ -32,16 +32,24 @@ namespace CommunityWebSite.Controllers
 
         [HttpPost]
         public IActionResult ReplyForm(ReplyViewModel vm) {
+            if(vm.MessageReply.Body.ToLower().Contains("haha")) {
+                string prop = "MessageReply.Body";
+                ModelState.AddModelError(prop, "Why are you laughing??");
+               
+            }
 
-            Message message = repository.GetAllMessages().Where(m =>
-            m.MessageID == vm.MessageID).FirstOrDefault();
+            if (ModelState.IsValid) {
+                Message message = repository.GetAllMessages().Where(m =>
+                m.MessageID == vm.MessageID).FirstOrDefault();
 
-            message.MessageReplies.Add(new Reply { Body = vm.MessageReply.Body, DateCreated = DateTime.Now });
+                message.MessageReplies.Add(new Reply { Body = vm.MessageReply.Body, DateCreated = DateTime.Now });
 
-            repository.Update(message);
+                repository.Update(message);
 
-            return RedirectToAction("Index", "Message");
+                return RedirectToAction("Index", "Message");
+            } else {
+                return View(vm);
+            }
         }
     }
-
 }
