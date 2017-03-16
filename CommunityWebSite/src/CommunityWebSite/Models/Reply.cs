@@ -12,6 +12,8 @@ namespace CommunityWebSite.Models
         [MaxLength(50, ErrorMessage = "Too long, didn't read.")]
         public string Body { get; set; }
 
+        public User ReplyCreator { get; set; }
+
         public DateTime DateCreated { get; set; }
 
     }

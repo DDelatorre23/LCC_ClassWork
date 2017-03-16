@@ -30,7 +30,20 @@
                 <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="History">History</a></li>
                 <li><a asp-area="" asp-controller="Map" asp-action="Index">Map</a></li>
-                <li><a asp-area="" asp-controller="Member" asp-action="Index">Members</a></li>
+                <li><a asp-area="" asp-controller="Member" asp-action="Index">Members</a></li>   
+            </ul>            
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul>
+                @if (!User.Identity.IsAuthenticated) {
+
+                    <li><a asp-area="" asp-controller="Auth" asp-action="Login">Login</a></li>
+                    <li><a asp-area="" asp-controller="Auth" asp-action="Register">Register</a></li>
+
+                } else {
+                    <li><a asp-area="" asp-controller="Auth" asp-action="Logout">LogOut</a></li>
+
+                }
             </ul>
         </div>
     </div>

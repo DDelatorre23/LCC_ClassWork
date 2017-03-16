@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using CommunityWebSite.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 namespace CommunityWebSite {
 
     public class Startup {
@@ -21,6 +23,15 @@ namespace CommunityWebSite {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
                 Configuration["Data:CommunityMessages:DefaultConnection"]));
+
+            services.AddDbContext<AppIdentityDbContext>(options =>
+            options.UseSqlServer(
+                Configuration["Data:CommunityMessagesIdentity:DefaultConnection"]));
+
+            services.AddIdentity<User, IdentityRole>(opts =>
+            { opts.Cookies.ApplicationCookie.LoginPath = "/Auth/Login"; })
+                 .AddEntityFrameworkStores<AppIdentityDbContext>();
+
             services.AddMvc();
             services.AddTransient<IMessage, MessageRepository>();
             services.AddTransient<IMember, MemberRepository>();
@@ -31,6 +42,7 @@ namespace CommunityWebSite {
         public void Configure(IApplicationBuilder app) {
             app.UseStaticFiles();
             app.UseStatusCodePages();
+            app.UseIdentity();
             app.UseMvcWithDefaultRoute();
             //app.UseMvc(routes => {
             //    routes.MapRoute(
