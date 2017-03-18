@@ -50,7 +50,7 @@ namespace CommunityWebSite {
             //        template: "{controller=Home}/{action=Index}/{id?}");
             //});
 
-            SeedData.EnsurePopulated(app);
+           SeedData.EnsurePopulated(app).Wait();
         }
     }
 }
